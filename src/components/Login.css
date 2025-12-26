@@ -1,58 +1,205 @@
+ /* RESET */
+* {
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* PAGE */
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+}
+
+/* LEFT IMAGE */
+.login-image {
+  background-size: cover;
+  background-position: center;
+}
+
+.login-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* logo container */
+.logo-container {
+  position: relative;
+  z-index: 5;              /* 👈 card mela varum */
+  margin-bottom: -25px;   /* 👈 card mela overlap */
+}
+
+/* logo perfect center */
+.login-logo {
+  height: 60px;
+  background: #fff;       /* 👈 white bg so card mela clear */
+  padding: 6px 10px;
+  border-radius: 10px;
+  display: block;
+}
+
+/* RIGHT PANEL */
+.login-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8rem;   /* 👈 increase pannom */
+}
+
+
+/* CARD */
+/* card */
 .login-card {
-  max-width: 420px;
-  margin: 3rem auto;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 6px 20px rgba(10,10,20,0.06);
-  background: #fff;
-  text-align: left;
+  position: relative;
+  z-index: 1;
+  width: 420px;
+  background: #ffffff;
+  padding: 3rem 2.5rem 2.5rem; /* 👈 top padding extra */
+  border-radius: 12px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
 }
 
+/* HEADING */
 .login-card h2 {
-  margin: 0 0 0.5rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
 }
 
+/* SUB TEXT */
+.login-card .sub {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1.8rem;
+}
+
+/* FORM */
 .login-form label {
   display: block;
-  margin: 0.6rem 0 0.2rem;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
 }
 
 .login-form input {
   width: 100%;
-  padding: 0.6rem;
-  margin-bottom: 0.6rem;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
+  height: 44px;
+  padding: 0 0.75rem;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  font-size: 0.95rem;
 }
 
+.login-form input:focus {
+  outline: none;
+  border-color: #c8a55f;
+}
+
+/* BUTTON */
 .actions {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: flex-end;
+  margin-top: 1.8rem;
 }
 
-button {
-  padding: 0.6rem 1rem;
-  border-radius: 6px;
+.actions button {
+  width: 100%;
+  height: 46px;
+  border-radius: 10px;
+  background: #c8a55f;
+  color: #fff;
   border: none;
-  background: #3b82f6;
-  color: white;
+  font-weight: 600;
+  font-size: 1rem;
   cursor: pointer;
 }
 
-button.secondary {
-  background: #f3f4f6;
-  color: #111827;
+.actions button:hover {
+  background: #b9964f;
 }
 
-.error {
-  color: #c53030;
+/* BACK BUTTON */
+.actions .secondary {
+  background: #eee;
+  color: #333;
   margin-bottom: 0.6rem;
 }
 
+/* ERROR */
+.error {
+  margin-top: 0.6rem;
+  color: #d93025;
+  font-size: 0.85rem;
+}
+
+/* MUTED */
 .muted {
-  color: #6b7280;
-  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1.2rem;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .login-page {
+    grid-template-columns: 1fr;
+  }
+
+  .login-image {
+    display: none;
+  }
+
+  .login-right {
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+
+/* FOOTER BELOW CARD */
+.login-footer {
+  margin-top: 28px;              /* card kela proper gap */
+  text-align: center;            /* 👈 MAIN FIX */
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* each line spacing */
+.login-footer p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+/* links */
+.login-footer a {
+  color: #2f7d32;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+/* language dropdown */
+.login-footer .lang {
+  margin-bottom: 14px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+/* green policy line */
+.login-footer .policy {
+  color: #2f7d32;
+}
+
+/* recaptcha text */
+.login-footer .recaptcha {
+  font-size: 0.8rem;
+  color: #666;
 }
