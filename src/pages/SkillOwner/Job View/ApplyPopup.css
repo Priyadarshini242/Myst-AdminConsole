@@ -1,0 +1,42 @@
+.custom-tabs .nav-link {
+    color: black;
+  }
+  
+  .custom-tabs .nav-link.active {
+    border: 10 black;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .custom-tabs .nav-link:focus,
+  .custom-tabs .nav-link:hover {
+  }
+  .custom-modal-body {
+    height: 70vh;
+    
+    overflow-y: auto;
+  }
+  .custom-modal-header .btn-close {
+    color: #f7ffdd;
+  }
+  
+  .custom-modal-header .btn-close:hover {
+    color: #d4e157;
+  }
+  .custom-modal-header .btn-close svg {
+    fill: #f7ffdd;
+  }
+  .skill-item {
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 0;
+    background: #f7f7f7;
+  }
+  .hover:hover {
+    color: black;
+  }
+  .wrap-text {
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  

@@ -1,0 +1,27 @@
+/* .sidebar {
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-items-wrapper {
+  flex-grow: 1;
+}
+.submenu {
+  margin-top: auto;
+}
+.sidebar .menu-item {
+  font-size: 1rem;
+}
+
+.sidebar .menu-item .icon {
+}
+
+.sidebar .menu-item.active {
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+
+.ms-2 {
+  margin-top: auto;
+} */

@@ -1,0 +1,19 @@
+.site-section {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    position: relative;
+  }
+  
+  .text-black {
+    color: black;
+  }
+  .btn-md {
+    padding: 12px 20px;
+  }
+  .btn-sm {
+    padding: 8px 18px;
+  }
+  .hover:hover {
+    filter: brightness(120%);
+  }
+  

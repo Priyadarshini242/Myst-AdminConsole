@@ -46,6 +46,7 @@ import LoginEmail from "./components/LoginEmail";
 import LoginPassword from "./components/LoginPassword";
 import "./components/Login.css";
 import loginImg from "./assets/login-image.jpg";
+// import router from "./routes";
 
 function App() {
   const [stage, setStage] = useState("email");

@@ -1,0 +1,45 @@
+.pcoded-main-container-ltr{
+    margin-left: 235px ;
+    position: relative;
+  margin: 0 auto 0 235px;
+  padding-top: 0;
+  display: block;
+  clear: both;
+  float: unset;
+  right: 0;
+  top: 0;
+  min-height: 100vh;
+  transition: all 0.15s ease-in-out;
+  background-color: #ffffff;
+}
+
+.pcoded-navbar{
+
+  .pcoded-inner-navbar-ltr{
+
+    li {
+
+      > a {
+        text-align: left;
+      }
+
+      &.pcoded-hasmenu {
+        .pcoded-submenu {
+          li{
+            > a {
+              text-align: left;
+              padding: 10px 7px 10px 60px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  &.navbar-collapsed {
+    ~ .pcoded-main-container-ltr {
+      margin-left: 70px;
+    }
+  }
+}

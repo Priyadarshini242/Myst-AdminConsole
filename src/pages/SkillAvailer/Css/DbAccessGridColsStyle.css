@@ -1,0 +1,45 @@
+.cell-size-20-dbGrid-column {
+    width: 20px;
+  }
+  .cell-size-40-dbGrid-column {
+    width: 40px;
+  }
+  .cell-size-80-dbGrid-column {
+    width: 80px;
+  }
+  .cell-size-120-dbGrid-column {
+    width: 120px;
+  }
+  .cell-size-160-dbGrid-column {
+    width: 160px;
+  }
+  .cell-size-200-dbGrid-column {
+    width: 250px;
+  }
+  .fixed-cell-dbGrid-column {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .status-container-dbGrid-column {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .status-icon-dbGrid-column {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .clickable-icon-dbGrid-column {
+    cursor: pointer;
+  }
+  
+  .disabled-dbGrid-column .clickable-icon-dbGrid-column {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  

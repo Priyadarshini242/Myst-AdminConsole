@@ -1,0 +1,73 @@
+
+@media (min-width: 576px) {
+    .rounded-nav {
+      border-radius: 50rem !important;
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .rounded-nav .nav-link {
+      border-radius: 50rem !important;
+    }
+  }
+  
+  /* With arrow tabs */
+  
+ .actived {
+    position: relative;
+    background-color: var(--primary-color);
+    color: white !important;
+    border-color: var(--primary-color);
+   
+  }
+  
+ .actived::after {
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--primary-color);
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+
+  }
+  
+
+  
+
+  
+  /*
+  *
+  * ==========================================
+  * FOR DEMO PURPOSE
+  * ==========================================
+  *
+  */
+  
+
+  .nav-pills .nav-link {
+    color: #555;
+  }
+  .text-uppercase {
+    letter-spacing: 0.1em;
+  }
+
+
+
+
+  .buttom-line-input {
+    border: none !important;
+    border-bottom: 1px solid #ced4da !important; /* You can adjust the color and thickness as needed */
+    border-radius: 0;
+    outline: none !important; /* Remove the default focus outline */
+  }
+  
+  .buttom-line-input:focus {
+    border-bottom: 2px solid #ced4da !important; /* Remove the default focus box-shadow */
+  }
+
+  .react-datepicker-wrapper{
+    width: 100%;
+  }

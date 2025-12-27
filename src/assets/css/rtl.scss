@@ -1,0 +1,55 @@
+/* nav bar css - single css override */
+.mobile-menu-width-icon-off{
+    width: 520px !important;
+}
+
+.mobile-menu-width-icon-on{
+    width: 180px !important;
+}
+
+/* dashboard css both css*/
+.pcoded-main-container-rtl{
+  margin-right: 235px ; /* change this to left */
+  position: relative;
+  margin: 0 235px 0 auto;
+  padding-top: 0;
+  display: block;
+  clear: both;
+  float: unset;
+  right: 0;
+  top: 0;
+  min-height: 100vh;
+  transition: all 0.15s ease-in-out;
+    background-color: #ffffff;
+}
+
+.pcoded-navbar{
+
+  .pcoded-inner-navbar-rtl{
+
+    li {
+
+      > a {
+        text-align: right;
+      }
+
+      &.pcoded-hasmenu {
+        .pcoded-submenu {
+          li{
+            > a {
+              text-align: right;
+              padding: 10px 60px 10px 7px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  &.navbar-collapsed {
+    ~ .pcoded-main-container-rtl {
+      margin-right: 70px;
+    }
+  }
+}

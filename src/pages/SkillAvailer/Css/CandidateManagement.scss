@@ -1,0 +1,28 @@
+.table-Opportunities {
+    > thead > tr > th {
+      border-top: 0;
+    }
+
+    tr {
+      td,
+      th {
+        &:first-child {
+          padding-left: 25px;
+        }
+
+        &:last-child {
+          padding-right: 25px;
+        }
+      }
+    }
+
+    &.without-header {
+      tr {
+        &:first-child {
+          td {
+            border-top: none;
+          }
+        }
+      }
+    }
+  }

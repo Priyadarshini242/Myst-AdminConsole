@@ -1,0 +1,6 @@
+.form-control.is-invalid, 
+.form-control.is-valid, 
+.was-validated .form-control:valid, 
+.was-validated .form-control:invalid {
+    background-image: none !important;
+}

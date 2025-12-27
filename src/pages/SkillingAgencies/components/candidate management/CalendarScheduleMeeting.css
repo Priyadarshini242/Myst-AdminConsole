@@ -1,0 +1,1334 @@
+.rbc-time-gutter {
+  width: 450px !important;
+  min-width: 450px !important;
+  max-width: 450px !important;
+  background: #fff;
+  border-right: 1px solid #e0e3e6;
+  font-size: 12px;
+  padding: 0;
+}
+.rbc-time-header-gutter {
+  width: 450px !important;
+  min-width: 450px !important;
+  max-width: 450px !important;
+  background: #f7f9fa;
+  border-right: 1px solid #e0e3e6;
+  font-size: 11px;
+  padding: 0;
+}
+
+/* Minimal CSS for the app */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: #222;
+}
+
+/* Google Calendar-like modern UI styles */
+body, html {
+  background: #f4f6fb;
+  font-family: 'Segoe UI', 'Roboto', 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.closeicons{ justify-content: end;
+    text-align: right;
+    float: right;}
+
+.app-calendar-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(60, 72, 88, 0.12);
+  padding: 20px 16px 16px 16px;
+  backdrop-filter: blur(10px);
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 4px;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+}
+
+.app-header p {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 400;
+}
+
+.calendar-demo-container {
+  margin-bottom: 20px;
+}
+
+.calendar-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+
+
+/* Sign in button styling */
+.sign-in-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  color: #333;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in-button:hover {
+  border-color: #4285f4;
+  box-shadow: 0 8px 24px rgba(66, 133, 244, 0.2);
+  transform: translateY(-2px);
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Create meeting button styling */
+.create-meeting-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(25, 103, 210, 0.18);
+}
+
+.create-meeting-button:hover {
+  background: var(--primary-color);
+  box-shadow: 0 6px 16px var(--PalateTertiary);
+}
+
+.plus-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+
+
+/* Success message styling */
+.success-message {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #d4edda;
+  color: #155724;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #c3e6cb;
+  font-weight: 500;
+}
+
+.success-icon {
+  width: 20px;
+  height: 20px;
+  fill: #28a745;
+}
+
+/* Calendar wrapper styling */
+.calendar-wrapper {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  overflow: visible !important;
+}
+
+/* Calendar header styling */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  background: var(--primary-color);
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(25, 103, 210, 0.15);
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header-title h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.header-title p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.header-timezone-info {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+/* Timezone toolbar styling (keeping for backward compatibility) */
+.timezone-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.timezone-title {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.timezone-title-text {
+  font-weight: 700;
+  color: #374151;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.timezone-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.timezone-label {
+  font-weight: 600;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.owner-timezone-label {
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: 0.9rem;
+}
+
+.current-time {
+  font-weight: 700;
+  color: #1e293b;
+  font-size: 1rem;
+}
+.owner-current-time {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+/* Header-specific timezone styling */
+.calendar-header .timezone-info {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.calendar-header .timezone-label {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.calendar-header .current-time {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* FullCalendar custom styling */
+.fc {
+  overflow: visible !important;
+}
+
+.fc .fc-scrollgrid {
+  overflow: visible !important;
+  border: none !important;
+}
+
+.fc .fc-scrollgrid-section-header {
+  overflow: visible !important;
+}
+
+.fc .fc-scrollgrid-section-body {
+  overflow: visible !important;
+}
+
+.fc-toolbar {
+  margin-bottom: 12px !important;
+}
+
+.fc-toolbar-title {
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+}
+
+.fc-button {
+  background: #f1f5f9 !important;
+  color: var(--primary-color) !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 6px !important;
+  margin: 0 2px !important;
+  font-weight: 600 !important;
+  padding: 4px 10px !important;
+  transition: all 0.2s ease !important;
+  font-size: 0.8rem !important;
+}
+
+.fc-button:hover {
+  background: #e2e8f0 !important;
+  color: var(--primary-color) !important;
+  transform: translateY(-1px) !important;
+}
+
+.fc-button-active, .fc-button:active, .fc-button:focus {
+  background: var(--primary-color) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+.fc-col-header-cell-cushion {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #475569 !important;
+}
+
+/* Custom day header styling */
+.day-header {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 4px 4px !important;
+  /* min-height: 60px !important; */
+  background: #fff !important;
+  border-radius: 8px !important;
+  /* margin: 4px !important; */
+  transition: all 0.2s ease !important;
+  position: relative !important;
+  box-shadow: 0 1px 4px rgba(25, 103, 210, 0.06) !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+.top-meeting-header {
+  
+  padding: 8px 4px !important;
+  background: #fff !important;
+  border-radius: 8px !important;
+  margin: 4px !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 1px 4px rgba(25, 103, 210, 0.06) !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+.day-header .day-name,
+.day-header .day-number {
+  color: var(--primary-color) !important;
+}
+
+.day-header.today {
+  background: var(--primary-color) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 12px var(--PalateTertiary) !important;
+  border: 1px solid var(--primary-color) !important;
+}
+
+.day-header.today .day-name,
+.day-header.today .day-number {
+  color: #fff !important;
+}
+
+.day-header.today .today-indicator {
+  background: rgba(255,255,255,0.2) !important;
+  color: #fff !important;
+}
+
+.day-name {
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  color: #374151 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  margin-bottom: 2px !important;
+}
+
+.day-number {
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  color: #1e293b !important;
+  margin-bottom: 2px !important;
+}
+
+.today-indicator {
+  font-size: 0.4rem !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  padding: 2px 6px !important;
+  border-radius: 10px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+}
+
+.day-header.today .day-name,
+.day-header.today .day-number {
+  color: #ffffff !important;
+}
+
+.fc-day-today {
+  background: var(--PalateDGrey) !important;
+}
+
+/* Week view specific slot label styling */
+.fc-timeGridWeek .fc .fc-timegrid-slot-label {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  background: var(--primary-color) !important;
+  border-right: 2px solid #cbd5e1 !important;
+  padding: 24px 28px !important;
+  height: 70px !important;
+  min-height: 70px !important;
+  max-height: 70px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+  text-align: left !important;
+  width: 100% !important;
+  max-width: 450px !important;
+  margin: 8px 8px 8px 0 !important;
+  border-radius: 12px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 4px rgba(25, 103, 210, 0.08) !important;
+  pointer-events: none !important;
+}
+
+/* Dual timezone labels styling - Week view only */
+.fc-timeGridWeek .fc .fc-timegrid-slot-label .dual-tz-labels {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  font-size: 0.85rem !important;
+  line-height: 1.3 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 450px !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  overflow: visible !important;
+}
+
+.fc-timeGridWeek .fc .fc-timegrid-slot-label .dual-tz-labels .admin-time {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  text-align: left !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  letter-spacing: 0.025em !important;
+}
+
+.fc-timeGridWeek .fc .fc-timegrid-slot-label .dual-tz-labels .user-time {
+  color: var(--primary-color) !important;
+  font-weight: 700 !important;
+  font-size: 0.9rem !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  text-align: left !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  letter-spacing: 0.025em !important;
+}
+
+.fc-timeGridWeek .fc .fc-timegrid-slot-label:hover {
+  background: var(--primary-color) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(25, 103, 210, 0.15) !important;
+  border-right-color: #94a3b8 !important;
+}
+
+
+
+/* Event styling */
+.fc-event {
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  border: none !important;
+  padding: 2px 6px !important;
+  transition: all 0.2s ease !important;
+  overflow: hidden !important;
+  max-width: 100% !important;
+  min-height: 20px !important;
+}
+
+.fc-event:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.custom-event {
+  /* background: #808080 !important; */
+  color: #fff !important;
+}
+
+/* Ensure event content doesn't overflow */
+.fc-event-main {
+  overflow: hidden !important;
+  max-width: 100% !important;
+}
+
+.fc-event-main-frame {
+  overflow: hidden !important;
+  max-width: 100% !important;
+}
+
+/* Day view specific event styling */
+.fc-timeGridDay .fc-event {
+  padding: 6px 8px !important;
+  min-height: 25px !important;
+  overflow: hidden !important;
+  max-width: 100% !important;
+}
+
+/* Day view slot clickability */
+.fc-timeGridDay .fc-timegrid-slot {
+  cursor: pointer !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.fc-timeGridDay .fc-timegrid-slot:hover {
+  background-color: var(--PalateDGrey) !important;
+}
+
+.fc-timeGridDay .fc-timegrid-slot-lane {
+  cursor: pointer !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.fc-timeGridDay .event-content {
+  padding: 2px !important;
+  overflow: hidden !important;
+  max-width: 100% !important;
+}
+
+.event-content {
+  padding: 4px;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.event-title {
+  /* font-weight: 600 !important; */
+  font-size: 0.85rem !important;
+  margin-bottom: 3px !important;
+  line-height: 1.1 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  max-width: 100%;
+
+   display: -webkit-box;
+  -webkit-line-clamp: 2;    /* limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;      /* allow wrapping */
+  line-height: 1.2em;       /* adjust to your font size */
+  max-height: 2.4em;        /* 2 lines × line-height */
+}
+
+/* Special styling for day view events */
+.fc-timeGridDay .event-title {
+  /* font-size: 0.9rem !important; */
+  line-height: 1.2 !important;
+  margin-bottom: 4px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  /* white-space: nowrap !important; */
+  max-width: 100% !important;
+}
+
+.event-times {
+  font-size: 0.7rem !important;
+  opacity: 0.9 !important;
+  overflow: hidden;
+}
+
+.time-display {
+  font-size: 0.7rem !important;
+  opacity: 0.9 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  margin-bottom: 1px;
+}
+
+.time-row-compact {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-bottom: 1px !important;
+  overflow: hidden !important;
+  font-size: 0.65rem !important;
+}
+
+.time-label-compact {
+  font-weight: 600 !important;
+  font-size: 0.6rem !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin-right: 4px !important;
+  min-width: 45px !important;
+}
+
+.time-value-compact {
+  font-weight: 500 !important;
+  font-size: 0.65rem !important;
+  color: rgba(255, 255, 255, 1) !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  flex: 1 !important;
+}
+
+/* Full content styles for day view */
+.time-display-full {
+  font-size: 0.8rem !important;
+  opacity: 0.95 !important;
+  line-height: 1.3 !important;
+  margin-bottom: 4px !important;
+  overflow: hidden !important;
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+.timezone-times {
+  margin-bottom: 3px !important;
+  overflow: hidden !important;
+}
+
+.timezone-times div {
+  margin-bottom: 2px !important;
+  font-weight: 500 !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.time-row-full {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-bottom: 2px !important;
+  overflow: hidden !important;
+}
+
+.time-label {
+  font-weight: 600 !important;
+  font-size: 0.65rem !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin-right: 6px !important;
+  min-width: 50px !important;
+}
+
+.time-value {
+  font-weight: 500 !important;
+  font-size: 0.7rem !important;
+  color: rgba(255, 255, 255, 1) !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  flex: 1 !important;
+}
+
+.duration-full {
+  font-size: 0.65rem !important;
+  font-weight: 600 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin-top: 2px !important;
+  padding-top: 2px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.event-duration {
+  font-size: 0.65rem !important;
+  opacity: 0.8 !important;
+  text-align: right;
+  margin-top: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fc .fc-scrollgrid {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+.fc .fc-timegrid-all-day {
+  background: #f8fafc !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  color: #64748b !important;
+  font-size: 0.9rem !important;
+  min-height: 32px !important;
+}
+
+.fc .fc-timegrid-all-day .fc-timegrid-axis {
+  color: #64748b !important;
+}
+
+/* Business hours styling */
+.fc .fc-timegrid-slot.fc-slot-now {
+  background: #eff6ff !important;
+}
+
+.fc .fc-timegrid-slot.fc-slot-past {
+  background: #f8fafc !important;
+}
+
+/* Clickable slot styling */
+.fc .fc-timegrid-slot {
+  transition: background-color 0.2s ease !important;
+}
+
+.fc .fc-timegrid-slot:hover {
+  background: #f0f9ff !important;
+  cursor: pointer !important;
+}
+
+/* General slot clickability for all views */
+.fc .fc-timegrid-slot {
+  cursor: pointer !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.fc .fc-timegrid-slot.clickable-slot {
+  cursor: pointer !important;
+  position: relative !important;
+  height: 60px;
+}
+
+.fc .fc-timegrid-slot.clickable-slot::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  transition: background 0.2s ease;
+  pointer-events: none;
+}
+
+.fc .fc-timegrid-slot.clickable-slot:hover::after {
+  background: var(--PalateDGrey);
+}
+
+.fc .fc-timegrid-slot-lane {
+  cursor: pointer !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Add subtle indicator for clickable slots */
+.fc .fc-timegrid-slot[data-clickable="true"]::before {
+  content: '+';
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  font-size: 12px;
+  color: #667eea;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  font-weight: bold;
+}
+
+.fc .fc-timegrid-slot[data-clickable="true"]:hover::before {
+  opacity: 0.6;
+}
+
+/* Selection styling */
+.fc .fc-highlight {
+  background: rgba(102, 126, 234, 0.2) !important;
+  border: 2px solid #667eea !important;
+}
+
+/* Ensure equal spacing for all calendar cells */
+.fc .fc-timegrid-col {
+  width: calc(100% / 7) !important; /* Equal width for 7 days */
+  min-width: 0 !important;
+  flex: 1 !important;
+}
+
+/* Override for Day view */
+.fc-timeGridDay-view .fc-timegrid-col {
+  width: 100% !important;
+  flex: none !important;
+}
+
+
+/* Ensure time axis has proper width and alignment - Week view only */
+.fc-timeGridWeek .fc .fc-timegrid-axis {
+  width: 450px !important;
+  min-width: 450px !important;
+  max-width: 450px !important;
+  text-align: left !important;
+  overflow: visible !important;
+  position: relative !important;
+  z-index: 10 !important;
+  background: #fff !important;
+  border-right: 2px solid #cbd5e1 !important;
+}
+
+/* Ensure time axis cells don't overflow - Week view only */
+.fc-timeGridWeek .fc .fc-timegrid-axis .fc-timegrid-slot-label {
+  overflow: hidden !important;
+  max-width: 450px !important;
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+/* Week view specific slot height */
+.fc-timeGridWeek .fc .fc-timegrid-slot {
+  height: 70px !important;
+  min-height: 70px !important;
+  max-height: 70px !important;
+  box-sizing: border-box !important;
+}
+
+/* Week view specific slot lane height */
+.fc-timeGridWeek .fc .fc-timegrid-slot-lane {
+  height: 100% !important;
+  min-height: 70px !important;
+  max-height: 70px !important;
+}
+
+/* Default slot label for day view and others: narrow, simple */
+.fc .fc-timegrid-slot-label {
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  color: #64748b !important;
+  background: #f8fafc !important;
+  border-right: 1px solid #e2e8f0 !important;
+  padding: 8px 12px !important;
+  height: 60px !important;
+  min-height: 60px !important;
+  max-height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  text-align: left !important;
+  width: 100% !important;
+  max-width: 200px !important;
+  transition: all 0.2s ease !important;
+  pointer-events: auto !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Week view only: pointer-events: none, margin, border-radius for slot label */
+.fc-timeGridWeek .fc .fc-timegrid-slot-label {
+  pointer-events: none !important;
+  margin: 8px 8px 8px 0 !important;
+  border-radius: 12px !important;
+}
+
+
+/* Ensure equal spacing for header cells */
+.fc .fc-col-header-cell {
+  width: calc(100% / 7) !important;
+  min-width: 0 !important;
+  flex: 1 !important;
+  text-align: center !important;
+}
+
+/* Make the header cell full width as well */
+.fc-timeGridDay-view .fc-col-header-cell {
+  width: 100% !important;
+  flex: none !important;
+  text-align: center !important;
+}
+
+.fc .fc-col-header-cell-cushion {
+  padding: 8px 4px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* User dropdown styling */
+.user-dropdown-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.user-dropdown-container .MuiFormControl-root {
+  min-width: 180px;
+  max-width: 220px;
+  font-size: 0.95rem;
+}
+
+.user-dropdown-container .MuiInputBase-root {
+  height: 40px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+/* Modal overlay and content styles for meeting creation */
+.meeting-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(15, 23, 42, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.meeting-modal-content {
+  background: #fff;
+  padding: 0;
+  border-radius: 20px;
+  min-width: 400px;
+  max-width: 600px;
+  width: 90vw;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px 0 24px;
+  margin-bottom: 24px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button:hover {
+  background: #f1f5f9;
+}
+
+.close-button svg {
+  width: 20px;
+  height: 20px;
+  fill: #64748b;
+}
+
+.meeting-form {
+  padding: 0 24px 24px 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group-inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.form-group-inline label {
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #374151;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.form-group-inline input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--primary-color);
+}
+
+.form-group-between {
+  justify-content: space-between;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.meeting-form input,
+.meeting-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #f9fafb;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.meeting-form input:focus,
+.meeting-form textarea:focus {
+  border-color: #667eea;
+  outline: none;
+  background: #fff;
+  box-shadow: 0 0 0 3px var(--PalateDGrey);
+}
+
+.meeting-form textarea {
+  min-height: 80px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.meeting-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.cancel-button {
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cancel-button:hover {
+  background: #e5e7eb;
+  border-color: #9ca3af;
+}
+
+.create-button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(25, 103, 210, 0.18);
+}
+
+.create-button:hover:not(:disabled) {
+  background: var(--primary-color);
+  box-shadow: 0 8px 24px var(--PalateTertiary);
+}
+
+.create-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .app-calendar-container {
+    margin: 20px;
+    padding: 20px 16px;
+    border-radius: 16px;
+  }
+  
+  .app-header h1 {
+    font-size: 2rem;
+  }
+  
+  .calendar-controls {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .meeting-modal-content {
+    min-width: 90vw;
+    margin: 20px;
+  }
+  
+  .timezone-toolbar {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  
+  .fc-toolbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .fc-toolbar-chunk {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .app-header p {
+    font-size: 1rem;
+  }
+  
+  .meeting-modal-actions {
+    flex-direction: column;
+  }
+  
+  .meeting-modal-actions button {
+    width: 100%;
+  }
+}
+
+/* Force the first column (time axis) to be 50px wide in FullCalendar */
+.fc-col0, .fc-timegrid-axis-col {
+  width: 150px !important;
+  min-width: 150px !important;
+  max-width: 150px !important;
+}
+.fc .fc-scrollgrid colgroup col:first-child {
+  width: 150px !important;
+  min-width: 150px !important;
+  max-width: 150px !important;
+}
+
+
+
+/* 📱 Small screens */
+@media (max-width: 768px) {
+.fc-col0, .fc-timegrid-axis-col {
+  width: 75px !important;
+  min-width: 75px !important;
+  max-width: 75px !important;
+   font-size: 10px !important; /* optional: shrink text too */
+}
+.fc .fc-scrollgrid colgroup col:first-child {
+  width: 75px !important;
+  min-width: 75px !important;
+  max-width: 75px !important;
+   font-size: 10px !important; /* optional: shrink text too */
+}
+  .fc .fc-timegrid-slot-label {
+    width: 75px !important;
+    min-width: 75px !important;
+    max-width: 75px !important;
+    font-size: 10px !important; /* optional: shrink text too */
+    padding: 2px !important;
+  }
+
+  .fc-col-header-cell-cushion{
+      font-size: 10px !important; /* optional: shrink text too */
+    padding: 2px !important;
+  }
+  .day-name{
+ font-size: 10px !important; /* optional: shrink text too */
+  }
+  .day-number{
+     font-size: 14px !important; /* optional: shrink text too */
+  }
+  .day-header{
+    box-shadow: none !important;
+  border: none !important;
+  }
+  .event-title{
+     font-size: 9px !important; /* optional: shrink text too */
+  }
+  .event-duration{
+     font-size: 9px !important; /* optional: shrink text too */
+  }
+  .event-content{
+    padding: 0;
+  }
+  .fc-event{
+    padding: 3px 1px 1px 1px !important;
+  }
+  /* .day-header.today{
+    background: none !important;
+  color: none !important;
+  border: none !important
+  }
+  .day-header.today .day-name, .day-header.today .day-number{
+    color: var(--primary-color) !important;
+  } */
+  .day-header.today .today-indicator{
+  font-size: 0.4rem !important;
+  font-weight: 400 !important;
+  color: #ffffff !important;
+  background: var(--primary-color) !important;
+  padding: 2px 4px !important;
+  border-radius: 10px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  }
+  .day-header.today{
+    box-shadow: none !important
+  }
+
+  
+  /* Keep header buttons in one row */
+.fc-header-toolbar {
+  display: flex !important;
+  justify-content: center !important; /* center them horizontally */
+  align-items: center !important;
+  flex-wrap: nowrap !important; /* prevent wrapping */
+  gap: 0.5rem !important; /* spacing between prev/title/next */
+}
+
+.fc-toolbar-chunk{
+  width: 100%;
+}
+
+/* Prevent title from forcing wrap */
+.fc-toolbar-chunk > div {
+  display: flex !important;
+  width: 100% !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 0.5rem !important;
+}
+}
+
+.fc .fc-daygrid-day-number{
+  color: var(--primary-color) !important;
+}
+
+/* ===== DAY VIEW ===== */
+.fc-timeGridDay-view .fc-timegrid-col .fc-event-main .event-content .event-title  {
+  font-size: 12px !important;  /* increase or decrease as needed */
+  margin-left: 5px;
+}

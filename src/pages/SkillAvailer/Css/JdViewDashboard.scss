@@ -1,0 +1,22 @@
+// .horizontalBar_Buttons_Left {
+//     border-top-left-radius: 13px;
+//     border-bottom-left-radius: 13px;
+// }
+
+// .horizontalBar_Buttons_Right {
+//     border-top-right-radius: 13px;
+//     border-bottom-right-radius: 13px;
+// }
+
+/* YourStyles.css */
+.resizer {
+    cursor: ew-resize;
+    width: 5px;
+    background-color: #ff1414;
+    height: 100%;
+    position: relative;
+    // right: 0;
+    // top: 0;
+   z-index: 1;
+   
+}
