@@ -1,0 +1,8 @@
+.mystgreen{
+    background-color: var(--primary-color);
+}
+.spantag1{
+    position: absolute;
+    bottom: anchor(bottom);
+    left: anchor(right);
+}

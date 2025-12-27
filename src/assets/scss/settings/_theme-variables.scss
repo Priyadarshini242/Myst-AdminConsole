@@ -1,0 +1,296 @@
+// =======================================
+//     List of variables for layout
+// =======================================
+
+$header-height: 56px;
+// $Menu-width: 250px;
+$Menu-width: 235px;
+// $Menu-width: 100px;
+$Menu-collapsed-width: 70px;
+
+:root {
+
+    // --primary-color: #1967d2;
+    --primary-color: #6d3a17;
+    --primary-color-light:rgba(109, 57, 23, 0.433);
+    --light-color: #eceff1;
+    --PalateWhite: #FFFFFF;
+    --PalateDGrey : #F5F7FC;
+    --PalateLGrey : #FFFDDF;
+    --PalateBlack : #202124;
+    --PalateGolden: #d4af37;
+
+
+    // --PalatePrimary : #1967D2;
+    --PalatePrimary : #6d3a17;
+    --PalateSecondary : #3f210d;
+    --PalateTertiary : rgba(109, 57, 23, 0.433);
+    --CardBorder: #d8d8d8;
+    --hoverColor: #dbdbfe;
+    --pillBackground: #00AFF0;
+    --pillDefaultFont: #1e1919;
+    --whatsapp-color: #25D366;
+    --mail-color:#E66D00;
+    --primary-lighten-color:#cde0f9;
+    --primary-color-blue:#1967D2;
+    --whatsapp-lighten-color:#dcf8c6;
+    --mail-lighten-color:#FED8b1;
+    --dark-color: #263238;
+    //Card Height
+
+   //OLD VALUES
+    // --cardBodyWithTimeline: 60vh; //card body without footer
+    // --cardBodyWithB-F: 68vh; //card body without footer
+    // --cardBodyWithB: 60vh;  //card body with breadcrumbs
+    // --cardBodyWithBS: 48.5vh; //card body with breadcrumbs and stepper
+    // --cardBodyWithBST: 39.5vh;//card body with breadcrumbs and stepper and tabs
+    // --cardBodyWithOnB: 62vh; //card body with onboarding
+
+    //NEW VALUES
+    --cardBodyWithTimeline: 60vh; //card body without footer
+    --cardBodyWithB-F: 66.5vh; //card body without footer
+    --cardBodyWithB: 59vh;  //card body with breadcrumbs
+    --cardBodyWithBS: 47.5vh; //card body with breadcrumbs and stepper
+    --cardBodyWithBST: 38.5vh;//card body with breadcrumbs and stepper and tabs
+    --cardBodyWithOnB: 56vh; //card body with onboarding
+
+    // NO HEIGHT VALUES
+    // --cardBodyWithTimeline: 100%; //card body without footer
+    // --cardBodyWithB-F: 100%; //card body without footer
+    // --cardBodyWithB: 100%;  //card body with breadcrumbs
+    // --cardBodyWithBS: 100%; //card body with breadcrumbs and stepper
+    // --cardBodyWithBST: 100%;//card body with breadcrumbs and stepper and tabs
+    // --cardBodyWithOnB: 100%; //card body with onboarding
+  }
+  
+
+// /* 1300px */ No need
+// @media (min-width: 1300px) {
+//   :root {
+//     --cardBodyWithTimeline: 63vh;
+//     --cardBodyWithB-F: 71vh;
+//     --cardBodyWithB: 63vh;
+//     --cardBodyWithBS: 51vh;
+//     --cardBodyWithBST: 42vh;
+//     --cardBodyWithOnB: 65vh;
+//   }
+// }
+
+
+
+
+// NEW VALUES
+/* 1600px */
+@media (min-width: 1600px) {
+  :root {
+    --cardBodyWithTimeline: 63vh;
+    --cardBodyWithB-F: 69.5vh;
+    --cardBodyWithB: 60vh;
+    --cardBodyWithBS: 51vh;
+    --cardBodyWithBST: 43vh;
+    --cardBodyWithOnB: 60vh;
+  }
+}
+
+/* 1900px */
+@media (min-width: 1900px) {
+  :root {
+    --cardBodyWithTimeline: 66vh;
+    --cardBodyWithB-F: 72.5vh;
+    --cardBodyWithB: 63vh;
+    --cardBodyWithBS: 56vh;
+    --cardBodyWithBST: 49vh;
+    --cardBodyWithOnB: 64vh;
+  }
+}
+
+/* 2200px */
+@media (min-width: 2200px) {
+  :root {
+    --cardBodyWithTimeline: 71vh;
+    --cardBodyWithB-F: 75.5vh;
+    --cardBodyWithB: 69vh;
+    --cardBodyWithBS: 62vh;
+    --cardBodyWithBST: 57vh;
+    --cardBodyWithOnB: 69.5vh;
+  }
+}
+
+/* 2500px */
+@media (min-width: 2500px) {
+  :root {
+    --cardBodyWithTimeline: 73vh;
+    --cardBodyWithB-F: 78.5vh;
+    --cardBodyWithB: 71vh;
+    --cardBodyWithBS: 66vh;
+    --cardBodyWithBST: 61vh;
+    --cardBodyWithOnB: 74vh;
+  }
+}
+
+/* 2800px */
+@media (min-width: 2800px) {
+  :root {
+    --cardBodyWithTimeline: 77vh;
+    --cardBodyWithB-F: 82.5vh;
+    --cardBodyWithB: 75vh;
+    --cardBodyWithBS: 70vh;
+    --cardBodyWithBST: 65vh;
+    --cardBodyWithOnB: 76vh;
+  }
+}
+
+/* 3100px */
+@media (min-width: 3100px) {
+  :root {
+    --cardBodyWithTimeline: 81vh;
+    // --cardBodyWithB-F: 85vh;
+    --cardBodyWithB: 75vh;
+    --cardBodyWithBS: 69vh;
+    --cardBodyWithBST: 61vh;
+    --cardBodyWithOnB: 78vh;
+  }
+}
+
+
+
+
+// ADDITIONAL VALUES
+// /* 3400px */ No need
+// @media (min-width: 3400px) {
+//   :root {
+//     --cardBodyWithTimeline: 84vh; /* +3vh */
+//     --cardBodyWithB-F: 85vh;      /* +3vh */
+//     --cardBodyWithB: 78vh;        /* +3vh */
+//     --cardBodyWithBS: 75vh;       /* +4vh */
+//     --cardBodyWithBST: 66vh;      /* +4vh */
+//     --cardBodyWithOnB: 89vh;      /* +4vh */
+//   }
+// }
+
+
+// /* 3700px */ No need
+// @media (min-width: 3700px) {
+//   :root {
+//     --cardBodyWithTimeline: 87vh; /* +3vh */
+//     --cardBodyWithB-F: 95vh;      /* +3vh */
+//     --cardBodyWithB: 87vh;        /* +3vh */
+//     --cardBodyWithBS: 79vh;       /* +4vh */
+//     --cardBodyWithBST: 70vh;      /* +4vh */
+//     --cardBodyWithOnB: 93vh;      /* +4vh */
+//   }
+// }
+
+
+// /* 4000px (4K Screens) */ No need
+// @media (min-width: 4000px) {
+//   :root {
+//     --cardBodyWithTimeline: 90vh; /* +3vh */
+//     --cardBodyWithB-F: 9vh;      /* +3vh */
+//     --cardBodyWithB: 90vh;        /* +3vh */
+//     --cardBodyWithBS: 83vh;       /* +4vh */
+//     --cardBodyWithBST: 74vh;      /* +4vh */
+//     --cardBodyWithOnB: 97vh;      /* +4vh */
+//   }
+// }
+
+
+
+
+// color list for build layouts
+$primary-color: #6d3a17;
+// var(--primary-color): #4099ff;
+$warning-color: #ffb64d;
+$danger-color: #ff5370;
+$success-color: #2ed8b6;
+$purple-color: #7759de;
+$info-color: #00bcd4;
+$secondary-color: #748892;
+$default-color: #d6d6d6;
+$light-color: #eceff1;
+$dark-color: #263238;
+$inverse-color: $dark-color;
+$theme-border: #e2e5e8;
+$PalateWhite: #ffffff;
+$PalateDGrey: #f5f7fc;
+$PalateLGrey: #fffddf;
+$PalateBlack: #202124;
+// $PalatePrimary: #1967d2;
+$PalatePrimary: #6d3a17;
+$PalateSecondary: #3f210d; //primary dark
+// $PalateTertiary: rgba(25, 103, 210, 0.15);
+$PalateTertiary: rgba(109, 57, 23, 0.433); //primary light
+
+// header
+$header-dark-background: #3b4650;
+$header-dark-text-color: #000000;
+$header-light-background: #fff;
+$header-light-text-color: #000000;
+
+// Menu    
+$menu-dark-background: #3b4650;
+$menu-dark-text-color: #000000;
+
+$menu-light-background: #fff;
+$menu-light-text-color: #000000;
+$menu-active-color: var(--primary-color);
+
+// Header background
+$color-header-name: "blue";
+$color-header-color: #4099ff;
+$color-header-color2: #73b4ff;
+
+// Menu background
+$color-menu-name: "blue";
+$color-menu-color: #4099ff;
+
+// Menu background gradient
+$color-menu-gradient-name: "blue";
+$color-menu-gradient-color: linear-gradient(
+  to bottom,
+  #7759de 0%,
+  #4099ff 100%
+);
+
+// Active background color
+$color-active-name: "blue";
+$color-active-color: #4099ff;
+
+$theme-font-family: "Poppins", sans-serif;
+$theme-font-size: 14px;
+$theme-background: #f6f7fb;
+$theme-font-color: #222;
+$theme-heading-color: #222;
+
+$color-name: c-blue, c-red, c-green, c-yellow, c-purple;
+$color-color: $primary-color, $danger-color, $success-color, $warning-color,
+  $purple-color;
+$color-bt-name: "primary", "danger", "success", "warning", "info", "purple";
+$color-bt-color: $primary-color, $danger-color, $success-color, $warning-color,
+  $info-color, $purple-color;
+
+// form-control variables
+$form-bg: #f0f3f6;
+
+// =====================================================================
+// ==================   Bootstrap Extra Variable  ======================
+// =====================================================================
+
+// Color contrast
+$yiq-contrasted-threshold: 200;
+$yiq-dark-color: #37474f;
+$yiq-light-color: #fff;
+$theme-color-interval: 8%;
+$alert-bg-level: -10;
+$alert-border-level: -9;
+$alert-color-level: 6;
+
+// card block css
+$card-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+$card-header-border: 1px solid #e2e5e8;
+
+//form check box
+$form-check-input-checked-color: var(--primary-color);
+$form-check-input-checked-bg-color: var(--primary-color);
+
+$table-hover-bg: #eceff1;

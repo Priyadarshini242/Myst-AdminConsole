@@ -1,0 +1,71 @@
+.form-control-borderless {
+  border: none;
+}
+
+.form-control-borderless:hover,
+.form-control-borderless:active,
+.form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.carousel-indicators button {
+  background-color: black; /* Set the background color to black */
+  border-radius: 50%; /* Make the buttons rounded */
+  width: 10px; /* Set the width */
+  height: 10px; /* Set the height */
+  margin: 0 5px; /* Add some margin between indicators */
+}
+
+/* Style for the active indicator */
+.carousel-indicators .active {
+  background-color: white; /* Change the background color of the active indicator */
+}
+
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
+}
+
+.progress {
+  height: 10px;
+}
+.image-container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.profile-container {
+  width: 2.5rem;
+  height: 2.5 rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

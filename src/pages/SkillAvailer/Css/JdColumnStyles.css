@@ -1,0 +1,44 @@
+.cell-size-20-jd-column {
+  width: 20px;
+}
+.cell-size-40-jd-column {
+  width: 40px;
+}
+.cell-size-80-jd-column {
+  width: 80px;
+}
+.cell-size-120-jd-column {
+  width: 120px;
+}
+.cell-size-160-jd-column {
+  width: 160px;
+}
+.cell-size-200-jd-column {
+  width: 250px;
+}
+.fixed-cell-jd-column {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.status-container-jd-column {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.status-icon-jd-column {
+  width: 10px;
+  height: 10px;
+}
+
+.clickable-icon-jd-column {
+  cursor: pointer;
+}
+
+.disabled-jd-column .clickable-icon-jd-column {
+  pointer-events: none;
+  opacity: 0.5;
+}

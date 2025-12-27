@@ -1,0 +1,16 @@
+/* .apexcharts-canvas {
+    overflow: hidden !important;
+}
+.apexcharts-canvas:hover .apexcharts-canvas-tools {
+    opacity: 0;
+}
+.apexcharts-canvas-tools {
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+} */
+.apexcharts-toolbar{
+   /* display: none !important; */
+}
+.gap-bg-color{
+    background-color:  var(--primary-color) !important;
+}
